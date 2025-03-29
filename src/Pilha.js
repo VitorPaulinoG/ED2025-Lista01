@@ -1,39 +1,51 @@
 class Pilha {
-    constructor(size = 5) {
-        this.dados = [];
-        this.size = size;
-        this.topo = 0;
-    }
-    push(elemento) {
-        if (this.isFull()) {
-            throw new Error("Stack Overflow");
-        }
-        this.dados[this.topo] = elemento;
-        this.topo++;
-    }
-    pop() {
-        if (this.isEmpty()) {
-            throw new Error("Stack underflow");
-        }
-        this.topo--;
-    }
-    top() {
-        if (!this.isEmpty()) {
-            return this.dados[this.topo - 1];
-        }
-    }
-    isEmpty() {
-        return this.length() === 0;
-    }
-    isFull() {
-        return this.length() === this.size;
-    }
-    toString() { }
-    clear() {
-        this.topo = 0;
-    }
-    length() {
-        return this.topo;
-    }
+  constructor (size = 5) {
+    this.dados = [];
+    this.size = size;
+    this.top = 0;
+  }
+
+  push(elemento) {
+    if(this.isFull()) throw new Error("Stack Overflow");
+
+    this.dados[this.top] = elemento;
+    this.top++;
+  }
+  
+  pop() {
+    if(this.isEmpty()) throw new Error("Stack Underflow");
+
+    let result = this.peek();
+    this.top--;
+    return result;
+  }
+
+  peek() {
+    if(this.isEmpty()) throw new Error("Stack Underflow");
+
+    return this.dados[this.top - 1];
+  }
+  
+  length() {
+    return this.top;
+  }
+
+  isEmpty() {
+    return this.length() === 0;
+  }
+  
+  isFull() {
+    return this.length() === this.size;
+  }
+  clear() {
+    this.top = 0;
+  }
+
+  toString() {
+    return this.dados.slice(0, this.top).toString();
+  }
+  
+
 }
+
 export default Pilha;
