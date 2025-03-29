@@ -15,7 +15,7 @@ beforeEach(() => {
 
 test("trocaTopoPorBase deve trocar o topo pela base, sem alterar a ordem dos elementos intermediários", () => {
   trocaTopoPorBase(p);
-  expect(p.toString()).toBe("5,2,3,4,1");
+  expect(p.toString()).toBe("1 4 3 2 5");
   expect(p.pop()).toBe(1);
   expect(p.pop()).toBe(4);
   expect(p.pop()).toBe(3);

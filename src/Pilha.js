@@ -42,7 +42,11 @@ class Pilha {
   }
 
   toString() {
-    return this.dados.slice(0, this.top).toString();
+    let result = '';
+    for (let i = this.length() - 1; i >= 0; i--) {
+      result += this.dados[i] + ' ';
+    }
+    return result.trim();
   }
   
 
