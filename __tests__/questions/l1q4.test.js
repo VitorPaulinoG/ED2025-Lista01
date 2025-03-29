@@ -1,4 +1,4 @@
-import converteDecimalParaBinario from "../../../src/listas/pilhas/l1q4";
+import converteDecimalParaBinario from "../../src/questions/l1q4";
 
 
 test("O valor 300 deve retornar 100101100", () => {

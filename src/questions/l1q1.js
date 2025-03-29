@@ -1,4 +1,4 @@
-import Pilha from "../../Pilha"
+import Pilha from "./../Pilha"
 
 const inverte = (texto) => {
   let p = new Pilha(texto.length);

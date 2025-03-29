@@ -1,4 +1,4 @@
-import PilhaTwoWay from "../../../src/listas/pilhas/l1q2";
+import PilhaTwoWay from '../../src/questions/l1q2'
 
 const SIZE = 8;
 let p;

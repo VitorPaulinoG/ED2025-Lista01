@@ -1,4 +1,4 @@
-import Pilha from "../../Pilha";
+import Pilha from "./../Pilha";
 
 export default function trocaTopoPorBase(p) {
   let topoIndice = p.length();

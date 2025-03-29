@@ -1,5 +1,5 @@
-import trocaTopoPorBase from "../../../src/listas/pilhas/l1q3";
-import Pilha from "../../../src/Pilha";
+import trocaTopoPorBase from "../../src/questions/l1q3";
+import Pilha from "../../src/Pilha";
 
 const SIZE = 5;
 let p;

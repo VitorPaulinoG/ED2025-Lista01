@@ -1,4 +1,4 @@
-import inverte from "../../../src/listas/pilhas/l1q1"
+import inverte from "../../src/questions/l1q1";
 
 test("O método inverte deve inverter o texto", () => {
   let result = inverte("INVERTER");

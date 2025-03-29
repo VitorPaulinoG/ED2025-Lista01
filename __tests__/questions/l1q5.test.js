@@ -1,4 +1,4 @@
-import bemFormado from "../../../src/listas/pilhas/l1q5";
+import bemFormado from "../../src/questions/l1q5";
 
 
 
