@@ -1,6 +1,6 @@
 import Pilha from "./../Pilha";
 
-export default function trocaTopoPorBase(p) {
+const trocaTopoPorBase = (p) => {
   let topoIndice = p.length();
   let aux = new Pilha(p.length());
   let topo = p.pop();
@@ -15,3 +15,5 @@ export default function trocaTopoPorBase(p) {
   }
   p.push(base);
 }
+
+export default trocaTopoPorBase;

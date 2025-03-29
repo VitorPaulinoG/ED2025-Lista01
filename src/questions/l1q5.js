@@ -1,7 +1,6 @@
 import Pilha from "./../Pilha";
 
-
-export default function bemFormado(expressao) {
+const bemFormado = (expressao) => {
   let p = new Pilha(expressao.length);
   let ultimoChar = '';
   for (let char of expressao) {
@@ -14,3 +13,6 @@ export default function bemFormado(expressao) {
   }
   return p.isEmpty();
 }
+
+
+export default bemFormado;

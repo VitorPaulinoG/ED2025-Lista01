@@ -1,7 +1,6 @@
 import Pilha from "./../Pilha";
 
-
-export default function converteDecimalParaBinario(n) {
+const converteDecimalParaBinario = (n) => {
   if(n === 1) return '1';
 
   let p = new Pilha(Math.ceil(Math.log2(n)));
@@ -22,3 +21,6 @@ export default function converteDecimalParaBinario(n) {
 
   return binario;
 }
+
+
+export default converteDecimalParaBinario;
